@@ -1,0 +1,51 @@
+ @RestController
+Combines @Controller and @ResponseBody.
+Used to create REST APIs that return JSON or XML.
+
+@RequestMapping
+Defines the base URL for a controller.
+Supports GET, POST, PUT, DELETE methods.
+
+@GetMapping
+Handles HTTP GET requests.
+Used to retrieve data from the server.
+
+@PostMapping
+Handles HTTP POST requests.
+Used for creating new resources.
+
+@PutMapping
+Handles HTTP PUT requests.
+Used for updating existing resources.
+
+@DeleteMapping
+Handles HTTP DELETE requests.
+Used to delete a resource.
+
+ @RequestBody
+Binds the HTTP request body to a Java object.
+Used in POST and PUT methods.
+
+@RequestParam
+Extracts query parameters from the URL.
+Can set default values and handle optional parameters.
+
+@PathVariable
+Extracts values from the URL path.
+Used when values are part of the endpoint URL.
+
+@RequestHeader
+Extracts specific HTTP headers from the request.
+Used to retrieve client metadata like User-Agent
+.
+@ExceptionHandler
+Handles exceptions within a specific controller.
+Prevents returning stack traces in API responses.
+
+@ControllerAdvice
+Provides global exception handling for all controllers.
+Centralizes error management in a Spring Boot application.
+
+@SpringBootApplication
+Marks the main class of a Spring Boot application.
+Combines @Configuration, @EnableAutoConfiguration, and @ComponentScan.
